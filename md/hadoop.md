@@ -1,15 +1,21 @@
 @title[Hadoop]
 ## Hadoop
+
++++
+@title[Hadoop]
+<span style="color:gray; font-size:1em">Hadoop </span>
 - "__The ApacheTM HadoopTM__" project develops open-source software for fault-tolerant, scalable and distributed computing.
 
-### Features:
++++
+@title[Features]
+<span style="color:gray; font-size:1em">Features </span>
 - Works with BigData on regular servers
 - Implements the logic of MapReduce
 - Strong open-source community
 
 +++
 @title[Hadoop Principles]
-## Hadoop Principles
+<span style="color:gray; font-size:1em">Hadoop Principles </span>
 
 - Scale-Out
 - Compute should move to data
@@ -18,7 +24,11 @@
 
 ---
 @title[MapReduce]
-## MapReduce is
+## MapReduce
+
++++
+@title[MapReduce]
+<span style="color:gray; font-size:1em">MapReduce </span>
 
 * a programming model and
 * an associated implementation
@@ -35,7 +45,7 @@
 
 +++
 @title[MapReduce Stages]
-## MapReduce Stages
+<span style="color:gray; font-size:0.7em">MapReduce Stages </span>
 
 * __Map__
     * Converts source elements to pairs (key, value)
@@ -51,7 +61,7 @@
 
 ![Image-Absolute](pics/wordcount-schematic.png)
 
----
++++
 @title[Python WordCount Realisation #1]
 <p><span class="menu-title slide-title">WordCount mapper.py</span></p>
 
@@ -67,7 +77,7 @@ for line in sys.stdin:
 @[4](Clean text.)
 @[5](Create Key-Value Pair.)
 
----
++++
 @title[Python WordCount Realisation #2]
 <p><span class="menu-title slide-title">WordCount reducer.py</span></p>
 
