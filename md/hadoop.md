@@ -56,8 +56,11 @@
 
 ---
 @title[Classic MapReduce Example: WordCount]
+## Classic MapReduce Example: WordCount
 
-<span style="color:gray; font-size:0.7em"> Classic MapReduce Example: WordCount </span>
++++
+@title[Classic MapReduce Example: WordCount Schema]
+<span style="color:gray; font-size:0.7em"> Classic MapReduce Example: WordCount Schema</span>
 
 ![Image-Absolute](pics/wordcount-schematic.png)
 
@@ -83,6 +86,7 @@ for line in sys.stdin:
 @[7](Get key and value from line.)
 @[8-12](While key doesn't change accumulate counts for one key.)
 
++++
 @title[WordCount: Bash Debugging]
 <p><span class="menu-title slide-title">WordCount: Bash Debugging</span></p>
 
@@ -98,6 +102,7 @@ python reducer.py > output.txt
 @[3](Sort all Key-Value Pairs by keys.)
 @[4](Implement Reduce part and save to output file.)
 
++++
 @title[WordCount: Hadoop Streaming]
 <p><span class="menu-title slide-title">WordCount: Hadoop Streaming</span></p>
 

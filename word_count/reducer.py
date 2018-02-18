@@ -1,4 +1,3 @@
-#reducer.py
 import sys
 
 last_key = None
