@@ -62,7 +62,7 @@
 ![Image-Absolute](pics/wordcount-schematic.png)
 
 +++
-@title[Python WordCount Realisation #1]
+@title[WordCount mapper.py]
 <p><span class="menu-title slide-title">WordCount mapper.py</span></p>
 
 ```python
@@ -77,33 +77,13 @@ for line in sys.stdin:
 @[4](Clean text.)
 @[5](Create Key-Value Pair.)
 
-+++
-@title[Python WordCount Realisation #2]
-<p><span class="menu-title slide-title">WordCount reducer.py</span></p>
-
-```python
-import sys
-
-last_key = None
-values_sum = 0
-
-for line in sys.stdin:
-    key, value = line.strip().split("\t")
-    if key != last_key and last_key is not None:
-        print(last_key + "\t" + str(values_sum))
-        values_sum = 0
-    last_key = key
-    values_sum += int(value)
-
-if key != last_key and last_key is not None:
-    print(last_key + "\t" + str(values_sum)) 
-```
++++?code=word_count/reducer.py&lang=python&title=Source: WordCount reducer.py
 
 @[6](Read every line from input.)
 @[7](Get key and value from line.)
 @[8-12](While key doesn't change accumulate counts for one key.)
 
-@title[Python WordCount Realisation #3]
+@title[WordCount: Bash Debugging]
 <p><span class="menu-title slide-title">WordCount: Bash Debugging</span></p>
 
 ```bash
@@ -118,7 +98,7 @@ python reducer.py > output.txt
 @[3](Sort all Key-Value Pairs by keys.)
 @[4](Implement Reduce part and save to output file.)
 
-@title[Python WordCount Realisation #4]
+@title[WordCount: Hadoop Streaming]
 <p><span class="menu-title slide-title">WordCount: Hadoop Streaming</span></p>
 
 ```bash
