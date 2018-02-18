@@ -52,3 +52,82 @@
 
 ![Image-Absolute](pics/spark-stack.png)
 
++++
+@title[Cluster managers]
+
+__Cluster managers__
+
+* Yarn
+* Mesos
+
++++
+@title[Spark Yarn]
+
+<span style="color:gray; font-size:0.7em">Spark Yarn </span>
+
+![Image-Absolute](pics/spark-yarn.png)
+
++++
+@title[RDD]
+
+<span style="color:gray; font-size:0.7em">RDD </span>
+
+* Resilient Distributed Dataset
+* Dataset, Distributed on executor’s
+* How we can get it:
+    - From files
+        - sc.textFile(“path/to/file”)
+    - From memory
+        - sc.parallelize(list)
+    - From other RDD
+
++++
+@title[RDD Example]
+
+<span style="color:gray; font-size:0.7em">RDD Example </span>
+```python
+a = range(100)
+data = sc.parallelize(a)
+data.take(5)
+```
+
+@[2](Create RDD from a list.)
+@[3](Return first 5 elements from RDD: [0, 1, 2, 3, 4])
+
++++
+@title[What is this “sc”?]
+
+<span style="color:gray; font-size:0.7em">What is this “sc”? </span>
+* SparkContext
+* Main entry point for Spark functionality
+```python
+from pyspark import SparkContext, SQLContext
+sc = SparkContext()
+sqlContext = SQLContext(sc)
+```
+
++++
+@title[More Detailed SC Initialization]
+
+<span style="color:gray; font-size:0.7em">More Detailed SC Initialization </span>
+
+```python
+from pyspark import SparkContext,SparkConf,SQLContext
+
+conf = (SparkConf()
+            .setMaster("local[*]")
+            .setAppName("AppName")
+            .set("spark.executor.memory", "4g")
+            .set("spark.cores.max", "2"))
+
+sc = SparkContext(conf=conf)
+
+sqlCtx = SQLContext(sc)
+```
+
++++
+@title[Spark Operations]
+
+<span style="color:gray; font-size:0.7em">Spark Operations </span>
+
+![Image-Absolute](pics/spark-operations.png)
