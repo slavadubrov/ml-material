@@ -39,11 +39,11 @@
 +++
 @title[Fault tolerance]
 
-<p><span style="font-size:1em; color:gray">__Fault tolerance__</span>
-<p><span style="font-size:1em">__Hadoop__</span> |
-<span style="font-size:1em">__Spark__</span>
-<p><span style="font-size:1em">Save data on HDFS in 3 copies</span> |
-<span style="font-size:1em">Saving chain of calculation</span>
+<span style="font-size:1em; color:gray">__Fault tolerance__</span>
+* __Hadoop__
+    - Save data on HDFS in 3 copies
+* __Spark__
+    - Saving chain of calculation
 
 +++
 @title[Spark Stack]
