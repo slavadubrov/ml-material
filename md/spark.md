@@ -141,12 +141,13 @@ sqlCtx = SQLContext(sc)
 
 <p><span style="color:gray; font-size:1em">Spark Operations: Transfomations </span>
 <p><span style="color:red; font-size:1em">LAZY! </span> | 
-<span style="font-size:0.8em">Create new datasets from an existing one </span>
-
-    * map
-    * flatMap
-    * mapPartitions
-    * filter
-    * join, union
-    * distinct
-    * reduceBykey
+<span style="font-size:0.8em">Create new datasets from an existing one </span> |<span style="color:red; font-size:1em">LAZY! </span>
+```scala
+map
+flatMap
+mapPartitions
+filter
+join, union
+distinct
+reduceBykey
+```
