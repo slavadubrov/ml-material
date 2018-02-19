@@ -152,3 +152,115 @@ union
 distinct
 reduceBykey
 ```
+
++++
+@title[Spark Operations: Actions]
+
+<p><span style="color:gray; font-size:1em">Spark Operations: Actions </span>
+<p><span style="font-size:0.8em">Mechanism for getting results out of Spark </span>
+```scala
+reduce
+collect
+count
+first
+take
+saveAsTextFile
+```
+
+---
+@title[Spark: Inside 2]
+## Spark: Inside 2
+
++++
+@title[RDD flow]
+
+<span style="color:gray; font-size:0.7em">RDD flow </span>
+
+![Image-Absolute](pics/rdd-flow.png)
+
++++
+@title[RDD flow: Perfomance trouble]
+
+<span style="color:gray; font-size:0.7em">RDD flow: Perfomance trouble </span>
+
+![Image-Absolute](pics/performance-trouble.png)
+
++++
+@title[Solution 1]
+
+<span style="color:gray; font-size:0.7em">Solution 1 – .collect() </span>
+
+![Image-Absolute](pics/solution-1.png)
+
++++
+@title[Solution 1: Out of memory]
+
+<span style="color:gray; font-size:0.7em">Solution 1: Out of memory </span>
+
+![Image-Absolute](pics/out-of-memory.png)
+
++++
+@title[Solution 2]
+
+<span style="color:gray; font-size:0.7em">Solution 2 – .persist() </span>
+
+![Image-Absolute](pics/solution-2.png)
+
+---
+@title[Shared Data]
+
+## Shared Data
+
++++
+@title[Shared Data]
+
+<span style="color:gray; font-size:0.7em">Shared Data </span>
+
+![Image-Absolute](pics/shared-data.png)
+
++++
+@title[Shared Data]
+
+<span style="color:gray; font-size:1em">Shared Data </span>
+
+* Variables that you want to share to all cluster;
+* Shouldn’t be big;
+* Two types:
+    * Broadcast variables
+    * Accumulators
+
++++
+@title[Broadcast variables]
+
+<p><span style="font-size:1em">__Broadcast variables__ </span>
+<p><span style="color:red; font-size:1em">Immutable! </span>
+
+```python
+broadcast_var = sc.broadcast([1,2,3])
+broadcast_var.value
+```
+
++++
+@title[Accumulators]
+
+<p><span style="font-size:1em">__Accumulators__ </span>
+<p><span style="color:red; font-size:1em">Not readable! </span>
+
+```python
+accum = sc.accumulator(0)
+sc.parallelize([1,2,3,4]).foreach(lambda x: accum.add(x))
+accum.value
+```
+
+---
+@title[Some Experience Examples]
+* You need to initialize big library in the cluster!
+What best solution?
+
+```python
+.mapPartions(
+    Initialization on the cluster;
+    map(calculation in RDD)
+)
+```
+
