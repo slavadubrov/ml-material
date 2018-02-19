@@ -80,3 +80,24 @@ sm = Matrices.sparse(3, 2, [0, 1, 3], [0, 2, 1], [9, 6, 8])
 * Estimators
 
 ![Image-Absolute](pics/ml-Pipeline.png)
+
+---
+@title[ML: Practice]
+## ML: Practice
+
++++?code=scripts/ml_practice.py&lang=python&title=ML: Practice
+
+@[1](Import library for MLlib on RDD)
+@[3-4](Train data creation)
+@[10-11](Learn a default model)
+@[13-14](Learn a model with interception)
+@[18](Import library for ML on DataFrames)
+@[20](Load a training data)
+@[21](Initialize a model)
+@[22](Fit)
+@[26-28](Import libraries for ML pipeline)
+@[30-35](Prepare training documents from a list of [id, text, label] tuples.)
+@[37-42](Prepare testing documents from a list of [id, text] tuples.)
+@[44-47](Configure ML pipeline with three stages: tokenizer, hashingTF, and lr)
+@[49](Fit the pipeline to training documents)
+@[51](Make predictions on test documents)
