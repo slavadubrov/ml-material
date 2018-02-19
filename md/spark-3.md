@@ -47,12 +47,8 @@ neg = LabeledPoint(0.0, SparseVector(3, [0, 2], [1.0, 3.0]))
 @title[MLlib Data Types: Local matrix]
 <span style="color:gray; font-size:0.8em">MLlib Data Types: __Local matrix__ </span>
 - <span style="font-size:0.8em">stored on a single machine</span>
-- <span style="font-size:0.8em">integer-typed row and column indices</span>
-- <span style="font-size:0.8em">double-typed values</span>
 - <span style="font-size:0.8em">stored in column-major order</span>
-- <span style="font-size:0.8em">can be:</span>
-    + <span style="font-size:0.8em">dense</span>
-    + <span style="font-size:0.8em">sparse</span>
+- <span style="font-size:0.8em">can be: __dense__ | __sparse__</span>
 ```python
 from pyspark.mllib.linalg import Matrix, Matrices
 dm = Matrices.dense(3, 2, [1, 2, 3, 4, 5, 6])
