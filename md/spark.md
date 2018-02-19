@@ -147,7 +147,8 @@ map
 flatMap
 mapPartitions
 filter
-join, union
+join
+union
 distinct
 reduceBykey
 ```
