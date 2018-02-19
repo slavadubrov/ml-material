@@ -31,10 +31,9 @@ sv1 = Vectors.sparse(3, [0, 2], [1.0, 3.0])
 +++
 @title[MLlib Data Types: Labeled point]
 <span style="color:gray; font-size:1em">MLlib Data Types: Labeled point </span>
-* Labeled point:
-    - specialized local vector
-    - associated with a label/response
-    - used in supervised learning algorithms
+- specialized local vector
+- associated with a label/response
+- used in supervised learning algorithms
 
 ```python
 from pyspark.mllib.linalg import SparseVector
@@ -46,15 +45,14 @@ neg = LabeledPoint(0.0, SparseVector(3, [0, 2], [1.0, 3.0]))
 
 +++
 @title[MLlib Data Types: Local matrix]
-<span style="color:gray; font-size:1em">MLlib Data Types: Local matrix </span>
-* Local matrix
-    - stored on a single machine
-    - integer-typed row and column indices
-    - double-typed values
-    - stored in column-major order
-    - can be:
-        + dense
-        + sparse
+<span style="color:gray; font-size:0.8em">MLlib Data Types: Local matrix </span>
+    - <span style="font-size:0.8em">stored on a single machine</span>
+    - <span style="font-size:0.8em">integer-typed row and column indices</span>
+    - <span style="font-size:0.8em">double-typed values</span>
+    - <span style="font-size:0.8em">stored in column-major order</span>
+    - <span style="font-size:0.8em">can be:</span>
+        + <span style="font-size:0.8em">dense</span>
+        + <span style="font-size:0.8em">sparse</span>
 ```python
 from pyspark.mllib.linalg import Matrix, Matrices
 dm = Matrices.dense(3, 2, [1, 2, 3, 4, 5, 6])
