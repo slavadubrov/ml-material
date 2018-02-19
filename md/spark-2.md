@@ -182,3 +182,16 @@ df.createOrReplaceTempView("people")
 sqlDF = spark.sql("SELECT * FROM people")
 sqlDF.show()
 ```
+
+---
+@title[DataFrame: Practice]
+## DataFrame: Practice
+
++++?code=scripts/dataframe_practice.py&lang=python&title=DataFrame: Practice
+
+@[1-6](Import and initialization)
+@[8-11](DataFrame creating from csv)
+@[13-15](groupBy() example with aggregation)
+@[17-22](join() example)
+@[24-26](Parquet file read and write)
+@[28-29](SQL queries)

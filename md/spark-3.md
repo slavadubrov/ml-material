@@ -1,0 +1,90 @@
+@title[Spark: MLlib]
+## Spark: MLlib
+
++++
+@title[MLlib Data Types: Local Vectors]
+<span style="color:gray; font-size:1em">MLlib Data Types: Local Vectors </span>
+* Local Vectors:
+    - stored on a single machine
+    - integer-typed and 0-based indices
+    - double-typed values
+
++++
+@title[MLlib Data Types: Local Vectors]
+<span style="color:gray; font-size:1em">MLlib Data Types: Local Vectors </span>
+* Local Vectors:
+    - Dense Vectors
+        + backed by a double array representing its entry values
+    - Sparse Vectors
+        + backed by two parallel arrays: indices and values
+
+```python
+import numpy as np
+from pyspark.mllib.linalg import Vectors
+
+dv1 = np.array([1.0, 0.0, 3.0])
+dv2 = [1.0, 0.0, 3.0]
+dv3 = Vectors.dense([1.0, 0.0, 3.0])
+sv1 = Vectors.sparse(3, [0, 2], [1.0, 3.0])
+
+```
+
++++
+@title[MLlib Data Types: Labeled point]
+<span style="color:gray; font-size:1em">MLlib Data Types: Labeled point </span>
+* Labeled point:
+    - specialized local vector
+    - associated with a label/response
+    - used in supervised learning algorithms
+
+```python
+from pyspark.mllib.linalg import SparseVector
+from pyspark.mllib.regression import LabeledPoint
+
+pos = LabeledPoint(1.0, [1.0, 0.0, 3.0])
+neg = LabeledPoint(0.0, SparseVector(3, [0, 2], [1.0, 3.0]))
+```
+
++++
+@title[MLlib Data Types: Local matrix]
+<span style="color:gray; font-size:1em">MLlib Data Types: Local matrix </span>
+* Local matrix
+    - stored on a single machine
+    - integer-typed row and column indices
+    - double-typed values
+    - stored in column-major order
+    - can be:
+        + dense
+        + sparse
+```python
+from pyspark.mllib.linalg import Matrix, Matrices
+dm = Matrices.dense(3, 2, [1, 2, 3, 4, 5, 6])
+sm = Matrices.sparse(3, 2, [0, 1, 3], [0, 2, 1], [9, 6, 8])
+```
+@[2](Create a dense matrix ((1.0, 2.0), (3.0, 4.0), (5.0, 6.0)))
+@[3](Create a sparse matrix ((9.0, 0.0), (0.0, 8.0), (0.0, 6.0)))
+
++++
+@title[MLlib Data Types: Distributed matrix]
+<span style="color:gray; font-size:1em">MLlib Data Types: Distributed matrix </span>
+* Distributed matrix
+    - stored distributively in one or more RDDs
+    - long-typed row and column indices
+    - double-typed values
+
++++
+@title[ML Pipelines]
+<span style="color:gray; font-size:1em">ML Pipelines </span>
+* provide a uniform set of high-level APIs built on top of DataFrames
+* help users create and tune practical machine learning pipelines
+
+![Image-Absolute](pics/pipeline-1.png)
+
++++
+@title[ML Pipeline components]
+<span style="color:gray; font-size:1em">ML Pipeline components </span>
+
+* Transformers
+* Estimators
+
+![Image-Absolute](pics/ml-Pipeline.png)
