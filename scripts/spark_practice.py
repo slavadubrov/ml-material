@@ -19,6 +19,8 @@ rdd_2 = (rdd_1
     .map(lambda x: x/2)
     .filter(lambda x: x%2 == 0))
 
+rdd_2.take(10)
+
 (rdd_2
     .distinct()
     .take(10))
