@@ -171,7 +171,7 @@ df1.unionAll(df2)
 
 <p><span style="font-size:1em">__DataFrame: Parquet__</span>
 
-![Image-Absolute](pics/parquet.jpg)![Image-Absolute](pics/columnar-data.jpg)
+![Image-Absolute](pics/parquet.jpg)[Image-Absolute](pics/columnar-data.jpg)
 
 +++
 @title[DataFrame: SQL support]
