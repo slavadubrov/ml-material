@@ -80,7 +80,7 @@ for line in sys.stdin:
 @[4](Clean text.)
 @[5](Create Key-Value Pair.)
 
-+++?code=word_count/reducer.py&lang=python&title=Source: WordCount reducer.py
++++?code=word_count/reducer.py&lang=python&title=WordCount reducer.py
 
 @[6](Read every line from input.)
 @[7](Get key and value from line.)

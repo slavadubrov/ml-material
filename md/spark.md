@@ -267,4 +267,16 @@ What best solution?
     map(calculation in RDD)
 )
 ```
+---
+@title[Spark practice]
+## Spark practice
 
++++?code=scripts/spark_practice.py&lang=python&title=Spark Practice
+
+@[1-4](Import and initialization)
+@[6](RDD Creation)
+@[8](Take first element from RDD: 0)
+@[10](Take first ten elements from RDD: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+@[12](Take all elements from RDD: [0, 1, 2, ... 99])
+@[14-16](Map through elements: [0, 2, 4, ... 198])
+@[18-20](Map through elements and filter them by condition: [0, 0, 2, 2, 4, 4, 6, 6, 8, 8])
