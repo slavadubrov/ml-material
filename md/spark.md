@@ -1,5 +1,5 @@
-@title[Spark]
-## Spark
+@title[Spark: Intro]
+## Spark: Intro
 
 +++
 @title[Spark: Intro]
@@ -51,6 +51,10 @@
 <span style="color:gray; font-size:0.7em">Spark Stack </span>
 
 ![Image-Absolute](pics/spark-stack.png)
+
+---
+@title[Spark: Inside]
+## Spark: Inside
 
 +++
 @title[Cluster managers]
@@ -128,6 +132,21 @@ sqlCtx = SQLContext(sc)
 +++
 @title[Spark Operations]
 
-<span style="color:gray; font-size:0.7em">Spark Operations </span>
+<span style="color:gray; font-size:1em">Spark Operations </span>
 
 ![Image-Absolute](pics/spark-operations.png)
+
++++
+@title[Spark Operations: Transfomations]
+
+<p><span style="color:gray; font-size:1em">Spark Operations: Transfomations </span>
+<p><span style="color:red; font-size:1em">LAZY! </span> | 
+<span style="font-size:0.8em">Create new datasets from an existing one </span>
+
+    * map
+    * flatMap
+    * mapPartitions
+    * filter
+    * join, union
+    * distinct
+    * reduceBykey
