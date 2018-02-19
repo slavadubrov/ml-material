@@ -207,9 +207,9 @@ saveAsTextFile
 ![Image-Absolute](pics/solution-2.png)
 
 ---
-@title[Shared Data]
+@title[Spark: Shared Data]
 
-## Shared Data
+## Spark: Shared Data
 
 +++
 @title[Shared Data]
@@ -253,26 +253,10 @@ accum.value
 ```
 
 ---
-@title[Some Experience Examples]
-## Some Experience Examples
+@title[Spark: practice]
+## Spark: practice
 
-+++
-@title[Big library initialization]
-* You need to initialize big library in the cluster!
-What best solution?
-
-```python
-.mapPartions(
-    Initialization on the cluster;
-    map(calculation in RDD)
-)
-```
-
----
-@title[Spark practice]
-## Spark practice
-
-+++?code=scripts/spark_practice.py&lang=python&title=Spark Practice
++++?code=scripts/spark_practice.py&lang=python&title=Spark: Practice
 
 @[1-4](Import and initialization)
 @[6](RDD Creation)
@@ -299,3 +283,18 @@ What best solution?
 @[92-100](Broadcast example)
 @[102-105](Accumulator example)
 
+---
+@title[Spark: Some Experience]
+## Spark: Some Experience
+
++++
+@title[Big library initialization]
+* You need to initialize big library in the cluster!
+What best solution?
+
+```python
+.mapPartions(
+    Initialization on the cluster;
+    map(calculation in RDD)
+)
+```
