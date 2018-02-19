@@ -12,12 +12,12 @@ rdd_1.take(10)
 rdd_1.collect()
 
 (rdd_1
-    .map(lambda x: x*2)
+    .map(lambda x: x * 2)
     .collect())
 
 rdd_2 = (rdd_1
-    .map(lambda x: x/2)
-    .filter(lambda x: x%2 == 0))
+    .map(lambda x: x / 2)
+    .filter(lambda x: x % 2 == 0))
 
 rdd_2.take(10)
 
@@ -31,9 +31,9 @@ rdd_2.top(5)
 
 rdd_2.takeOrdered(3)
 
-rdd_1.reduce(lambda a, b: a+b)
+rdd_1.reduce(lambda a, b: a + b)
 
-rdd_1.fold(100, lambda a,b: a + b)
+rdd_1.fold(100, lambda a, b: a + b)
 
 rdd_1.getNumPartitions()
 
@@ -41,13 +41,13 @@ rdd_2.countByValue()
 
 # countByKey()
 rdd_key_value = (rdd_1
-    .map(lambda x: ((x/4)**3,x)))
+    .map(lambda x: ((x / 4)**3, x)))
 rdd_key_value.take(10)
 rdd_key_value.countByKey()
 
 # flatMap()
 (rdd_1
-    .flatMap(lambda x: (x, (x/4)**3))
+    .flatMap(lambda x: (x, (x / 4)**3))
     .take(10))
 
 # groupByKey()

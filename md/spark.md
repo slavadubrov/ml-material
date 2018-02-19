@@ -267,6 +267,7 @@ What best solution?
     map(calculation in RDD)
 )
 ```
+
 ---
 @title[Spark practice]
 ## Spark practice
@@ -279,4 +280,22 @@ What best solution?
 @[10](Take first ten elements from RDD: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 @[12](Take all elements from RDD: [0, 1, 2, ... 99])
 @[14-16](Map through elements: [0, 2, 4, ... 198])
-@[18-20](Map through elements and filter them by condition: [0, 0, 2, 2, 4, 4, 6, 6, 8, 8])
+@[18-20](Map through elements and filter them by condition: [0, 0, 2, 2, 4, 4, 6, 6, 8, 8 ...])
+@[22-24](Get unique elements: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18])
+@[26](Count elements)
+@[28](Get first 5 maximum elements)
+@[30](Get first 3 minimum elements)
+@[32](Sum of elements with reduce())
+@[34](Sum of elements with fold(): return sum + 100*(number_of_partitions+1))
+@[36](Get number of partitions)
+@[38](Count every unique element)
+@[41-44](Count elements by key)
+@[47-49](flatMap() example)
+@[52-57](groupByKey() sum example)
+@[60-63](reduceByKey() sum example)
+@[66](Read text file)
+@[70-74](WordCount example)
+@[77-89](Cache examples)
+@[92-100](Broadcast example)
+@[102-105](Accumulator example)
+
