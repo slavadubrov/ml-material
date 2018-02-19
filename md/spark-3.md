@@ -12,12 +12,10 @@
 +++
 @title[MLlib Data Types: Local Vectors]
 <span style="color:gray; font-size:0.7em">MLlib Data Types: Local Vectors </span>
-
-* <span style="font-size:0.7em">Local Vectors:</span>
-    - <span style="font-size:0.7em">Dense Vectors</span>
-        + <span style="font-size:0.7em">backed by a double array representing its entry values</span>
-    - <span style="font-size:0.7em">Sparse Vectors</span>
-        + <span style="font-size:0.7em">backed by two parallel arrays: indices and values</span>
+- <span style="font-size:0.7em">Dense Vectors</span>
+    + <span style="font-size:0.7em">backed by a double array representing its entry values</span>
+- <span style="font-size:0.7em">Sparse Vectors</span>
+    + <span style="font-size:0.7em">backed by two parallel arrays: indices and values</span>
 
 ```python
 import numpy as np
