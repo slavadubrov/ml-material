@@ -11,7 +11,7 @@
 
 +++
 @title[MLlib Data Types: Local Vectors]
-<span style="color:gray; font-size:0.7em">MLlib Data Types: Local Vectors </span>
+<span style="color:gray; font-size:0.7em">MLlib Data Types: __Local Vectors__ </span>
 - <span style="font-size:0.7em">Dense Vectors</span>
     + <span style="font-size:0.7em">backed by a double array representing its entry values</span>
 - <span style="font-size:0.7em">Sparse Vectors</span>
@@ -30,7 +30,7 @@ sv1 = Vectors.sparse(3, [0, 2], [1.0, 3.0])
 
 +++
 @title[MLlib Data Types: Labeled point]
-<span style="color:gray; font-size:1em">MLlib Data Types: Labeled point </span>
+<span style="color:gray; font-size:1em">MLlib Data Types: __Labeled point__ </span>
 - specialized local vector
 - associated with a label/response
 - used in supervised learning algorithms
@@ -45,14 +45,14 @@ neg = LabeledPoint(0.0, SparseVector(3, [0, 2], [1.0, 3.0]))
 
 +++
 @title[MLlib Data Types: Local matrix]
-<span style="color:gray; font-size:0.8em">MLlib Data Types: Local matrix </span>
-    - <span style="font-size:0.8em">stored on a single machine</span>
-    - <span style="font-size:0.8em">integer-typed row and column indices</span>
-    - <span style="font-size:0.8em">double-typed values</span>
-    - <span style="font-size:0.8em">stored in column-major order</span>
-    - <span style="font-size:0.8em">can be:</span>
-        + <span style="font-size:0.8em">dense</span>
-        + <span style="font-size:0.8em">sparse</span>
+<span style="color:gray; font-size:0.8em">MLlib Data Types: __Local matrix__ </span>
+- <span style="font-size:0.8em">stored on a single machine</span>
+- <span style="font-size:0.8em">integer-typed row and column indices</span>
+- <span style="font-size:0.8em">double-typed values</span>
+- <span style="font-size:0.8em">stored in column-major order</span>
+- <span style="font-size:0.8em">can be:</span>
+    + <span style="font-size:0.8em">dense</span>
+    + <span style="font-size:0.8em">sparse</span>
 ```python
 from pyspark.mllib.linalg import Matrix, Matrices
 dm = Matrices.dense(3, 2, [1, 2, 3, 4, 5, 6])
@@ -63,11 +63,10 @@ sm = Matrices.sparse(3, 2, [0, 1, 3], [0, 2, 1], [9, 6, 8])
 
 +++
 @title[MLlib Data Types: Distributed matrix]
-<span style="color:gray; font-size:1em">MLlib Data Types: Distributed matrix </span>
-* Distributed matrix
-    - stored distributively in one or more RDDs
-    - long-typed row and column indices
-    - double-typed values
+<span style="color:gray; font-size:1em">MLlib Data Types: __Distributed matrix__ </span>
+- stored distributively in one or more RDDs
+- long-typed row and column indices
+- double-typed values
 
 +++
 @title[ML Pipelines]
