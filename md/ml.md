@@ -63,7 +63,7 @@
 
 ## Performance Metrics. Classification
 
-+++?../pics/confusion-matrix.png
++++?pics/confusion-matrix.png
 @title[Confusion Matrix]
 
 
