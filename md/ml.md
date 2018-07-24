@@ -128,12 +128,24 @@ $$ FPR=\frac { FP }{ FP+TN } $$
 
 ![Video](https://youtube.com/embed/OAl6eAyP-yo)
 
-+++
-@title[NLL]
-
 ---
 @title[Performance Metrics. Regression]
 
 ## Performance Metrics. Regression
 
+* **Mean Squared Error**
+$$ MSE=\frac { 1 }{ N } \sum { { \left( y({ x }_{ i })-{ t }_{ i } \right)  }^{ 2 } } ,\quad RMSE=\sqrt { MSE } $$
+* **Mean Absolute Error**
+$$ MAE=\frac { 1 }{ N } \sum { \left| y({ x }_{ i })-{ t }_{ i } \right|  } ,\quad RMAE=\sqrt { MAE }  $$
 
++++
+@title[R2 Metric]
+
+* The total sum of squares:
+$$ SS_{\text{tot}}=\sum _{i}(y_{i}-{\bar {y}})^{2},} SS_{\text{tot}}=\sum _{i}(y_{i}-{\bar {y}})^{2}, $$
+* The regression sum of squares, also called the explained sum of squares:
+$$ { SS_{\text{reg}}=\sum _{i}(f_{i}-{\bar {y}})^{2},} SS_{\text{reg}}=\sum _{i}(f_{i}-{\bar {y}})^{2}, $$
+* The sum of squares of residuals, also called the residual sum of squares:
+$$ { SS_{\text{res}}=\sum _{i}(y_{i}-f_{i})^{2}=\sum _{i}e_{i}^{2}\,} {\displaystyle SS_{\text{res}}=\sum _{i}(y_{i}-f_{i})^{2}=\sum _{i}e_{i}^{2}\,} $$
+* The coefficient of determination
+$$ { R^{2}\equiv 1-{SS_{\rm {res}} \over SS_{\rm {tot}}}.\,} R^{2}\equiv 1-{SS_{\rm {res}} \over SS_{\rm {tot}}}.\, $$
