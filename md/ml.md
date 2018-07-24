@@ -133,8 +133,10 @@ $$ FPR=\frac { FP }{ FP+TN } $$
 
 ## Performance Metrics. Regression
 
++++
+@title[MSE/MAE]
 * **Mean Squared Error**
-$$ MSE=\frac { 1 }{ N } \sum { { \left( y({ x }_{ i })-{ t }_{ i } \right)  }^{ 2 } } $$
+$$ MSE=\frac { 1 }{ N } \sum { { \left( y({ x }_{ i })-{ t }_{ i } \right)  }^{ 2 } } \quad RMSE=\sqrt { MSE } $$
 * **Mean Absolute Error**
 $$ MAE=\frac { 1 }{ N } \sum { \left| y({ x }_{ i })-{ t }_{ i } \right|  } \quad RMAE=\sqrt { MAE }  $$
 
