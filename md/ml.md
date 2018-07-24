@@ -139,7 +139,7 @@ $$ FPR=\frac { FP }{ FP+TN } $$
 * **test**
 $$ TPR=\frac { TP }{ TP+FN } $$
 * **Mean Squared Error**
-$$ MSE=\frac { 1 }{ N } $$
+$$ MSE=\frac { 1 }{ N } \sum { ( y(x_i)-t_i) }  $$
 * **Mean Absolute Error**
 $$ MAE=\frac { 1 }{ N } \sum { \left| y({ x }_{ i })-{ t }_{ i } \right|  } \quad RMAE=\sqrt { MAE }  $$
 
