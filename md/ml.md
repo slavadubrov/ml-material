@@ -135,6 +135,9 @@ $$ FPR=\frac { FP }{ FP+TN } $$
 
 +++
 @title[MSE/MAE]
+
+* **test**
+$$ TPR=\frac { TP }{ TP+FN } $$
 * **Mean Squared Error**
 $$ MSE=\frac { 1 }{ N } \sum { { \left( y({ x }_{ i })-{ t }_{ i } \right)  }^{ 2 } } \quad RMSE=\sqrt { MSE } $$
 * **Mean Absolute Error**
