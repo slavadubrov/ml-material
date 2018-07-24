@@ -155,4 +155,4 @@ $$ SS_{res}=\sum _i { (y_i - f_i)^2 } $$
 @title[R2 Metric]
 
 * The coefficient of determination
-$$ R^2 = 1 - \frac {SS_res}{SS_tot} $$
+$$ R^2 = 1 - \frac {1}{2} $$
