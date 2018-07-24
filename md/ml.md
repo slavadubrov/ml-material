@@ -107,6 +107,9 @@ $$	F_{ 1 } = 2 \cdot \frac { Precision\cdot Recall }{ Precision + Recall } $$
 
 +++
 @title[TPR/FPR]
+
+### TPR/FPR
+
 * **True Positive Rate (TPR)**
 $$ TPR=\frac { TP }{ TP+FN } $$
 * **False Positive Rate (FPR)**
