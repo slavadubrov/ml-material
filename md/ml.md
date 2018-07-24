@@ -89,13 +89,9 @@
 +++
 @title[F-measure]
 * **F-measure** is Harmonic mean of Precision and Recall.
-`\[
-F_{ \beta  }=\left( 1\quad +\quad { \beta  }^{ 2 } \right) \cdot \frac { Precision\cdot Recall }{ { \beta  }^{ 2 }\cdot Precision\quad +\quad Recall } 
-\]`
+$$ F_{ \beta  }=\left( 1\quad +\quad { \beta  }^{ 2 } \right) \cdot \frac { Precision\cdot Recall }{ { \beta  }^{ 2 }\cdot Precision\quad +\quad Recall } $$
 * **F1-measure**
-`\[
-	F_{ 1 }=2\cdot \frac { Precision\cdot Recall }{ Precision\quad +\quad Recall } 
-\]`
+$$	F_{ 1 }=2\cdot \frac { Precision\cdot Recall }{ Precision\quad +\quad Recall } $$
 
 +++
 @title[AUC]
