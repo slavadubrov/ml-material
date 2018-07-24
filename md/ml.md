@@ -96,6 +96,14 @@ $$ F_{ \beta  } = \left( 1 + { \beta  }^{ 2 } \right) \cdot \frac { Precision\cd
 * **F1-measure**
 $$	F_{ 1 } = 2 \cdot \frac { Precision\cdot Recall }{ Precision + Recall } $$
 
++++[Harmonic Mean]
+
+#### Harmonic mean
+
+**Harmonic mean** is kind of an average when x and y are equal. But when x and y are different, then it’s closer to the smaller number as compared to the larger number.
+
+![](pics/harmonic-mean.png)
+
 +++
 @title[AUC]
 
