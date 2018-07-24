@@ -126,6 +126,8 @@ $$ FPR=\frac { FP }{ FP+TN } $$
 +++
 @title[AUC]
 
+![Video](https://www.youtube.com/watch?v=OAl6eAyP-yo)
+
 +++
 @title[NLL]
 
