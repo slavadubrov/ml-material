@@ -136,12 +136,10 @@ $$ FPR=\frac { FP }{ FP+TN } $$
 +++
 @title[MSE/MAE]
 
-* **test**
-$$ TPR=\frac { TP }{ TP+FN } $$
 * **Mean Squared Error**
-$$ MSE=\frac { 1 }{ N } \sum { ( y(x_i)-t_i) ^ 2 }  $$
+$$ MSE=\frac { 1 }{ N } \sum { ( y(x_i)-t_i) ^ 2 } \quad RMSE=\sqrt { MSE } $$
 * **Mean Absolute Error**
-$$ MAE=\frac { 1 }{ N } \sum { \left| y({ x }_{ i })-{ t }_{ i } \right|  } \quad RMAE=\sqrt { MAE }  $$
+$$ MAE=\frac { 1 }{ N } \sum { | y(x_i)-t_i | } \quad RMAE=\sqrt { MAE }  $$
 
 +++
 @title[R2 Metric]
