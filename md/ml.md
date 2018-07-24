@@ -106,6 +106,20 @@ $$	F_{ 1 } = 2 \cdot \frac { Precision\cdot Recall }{ Precision + Recall } $$
 ![](pics/harmonic-mean.png)
 
 +++
+@title[TPR/FPR]
+* **True Positive Rate (TPR)**
+$$ TPR=\frac { TP }{ TP+FN } $$
+* **False Positive Rate (FPR)**
+$$ FPR=\frac { FP }{ FP+TN } $$
+
++++
+@title[Receiver Operating Characteristics (ROC)]
+
+### Receiver Operating Characteristics (ROC)
+
+![](pics/roc.png)
+
++++
 @title[AUC]
 
 +++
