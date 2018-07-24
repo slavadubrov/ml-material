@@ -96,7 +96,8 @@ $$ F_{ \beta  } = \left( 1 + { \beta  }^{ 2 } \right) \cdot \frac { Precision\cd
 * **F1-measure**
 $$	F_{ 1 } = 2 \cdot \frac { Precision\cdot Recall }{ Precision + Recall } $$
 
-+++[Harmonic Mean]
++++
+@title[Harmonic Mean]
 
 #### Harmonic mean
 
