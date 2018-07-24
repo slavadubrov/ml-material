@@ -150,5 +150,9 @@ $$ SS_{tot}=\sum _i { (y_i - {\bar y})^2 } $$
 $$ SS_{reg}=\sum _i { (f_i - {\bar y})^2 } $$
 * The sum of squares of residuals, also called the residual sum of squares:
 $$ SS_{res}=\sum _i { (y_i - f_i)^2 } $$
+
++++
+@title[R2 Metric]
+
 * The coefficient of determination
-$$ { R^{2}\equiv 1-{SS_{\rm {res}} \over SS_{\rm {tot}}}.\,} R^{2}\equiv 1-{SS_{\rm {res}} \over SS_{\rm {tot}}}.\, $$
+$$ R^2 = 1 - \frac {SS_{res}} {SS_{tot}} $$
