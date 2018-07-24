@@ -118,7 +118,8 @@ $$ FPR=\frac { FP }{ FP+TN } $$
 +++
 @title[Receiver Operating Characteristics (ROC)]
 
-### Receiver Operating Characteristics (ROC) and Area Under the Curve (AUC)
+### Receiver Operating Characteristics (ROC)
+#### Area Under the Curve (AUC)
 
 ![](pics/roc.png)
 
