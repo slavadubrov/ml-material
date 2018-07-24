@@ -88,6 +88,9 @@
 
 +++
 @title[F-measure]
+
+### Balanced Precision/Recall metrics
+
 * **F-measure** is Harmonic mean of Precision and Recall.
 $$ F_{ \beta  }=\left( 1\quad +\quad { \beta  }^{ 2 } \right) \cdot \frac { Precision\cdot Recall }{ { \beta  }^{ 2 }\cdot Precision\quad +\quad Recall } $$
 * **F1-measure**
