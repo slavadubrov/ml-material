@@ -145,10 +145,10 @@ $$ MAE=\frac { 1 }{ N } \sum { | y(x_i)-t_i | } , \quad RMAE=\sqrt { MAE }  $$
 @title[R2 Metric]
 
 * The total sum of squares:
-$$ SS_{tot}=\sum _i {(y_i - {\bar y})^2} $$
+$$ SS_{tot}=\sum _i { (y_i - {\bar y})^2 } $$
 * The regression sum of squares, also called the explained sum of squares:
-$$ { SS_{\text{reg}}=\sum _{i}(f_{i}-{\bar {y}})^{2},} SS_{\text{reg}}=\sum _{i}(f_{i}-{\bar {y}})^{2}, $$
+$$ SS_{reg}=\sum _i { (f_i - {\bar y})^2 } $$
 * The sum of squares of residuals, also called the residual sum of squares:
-$$ { SS_{\text{res}}=\sum _{i}(y_{i}-f_{i})^{2}=\sum _{i}e_{i}^{2}\,} {\displaystyle SS_{\text{res}}=\sum _{i}(y_{i}-f_{i})^{2}=\sum _{i}e_{i}^{2}\,} $$
+$$ SS_{res}=\sum _i { (y_i - f_i)^2 } $$
 * The coefficient of determination
 $$ { R^{2}\equiv 1-{SS_{\rm {res}} \over SS_{\rm {tot}}}.\,} R^{2}\equiv 1-{SS_{\rm {res}} \over SS_{\rm {tot}}}.\, $$
