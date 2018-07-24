@@ -66,6 +66,38 @@
 +++
 @title[Confusion Matrix]
 
+<span style="color:gray; font-size:0.7em">Confusion Matrix </span>
+
 ![](pics/confusion-matrix.png)
+
++++
+@title[Accuracy, Precision, Recall]
+
+<span style="color:gray; font-size:0.7em">Accuracy, Precision, Recall </span>
+
+![](pics/confusion-matrix-2.png)
+
++++
+@title[When to use Precision and When to use Recall?]
+
+### When to use Precision and When to use Recall?
+
+* **Precision** is about being precise. So even if we managed to capture only one cancer case, and we captured it correctly, then we are 100% precise.
+
+* **Recall** is not so much about capturing cases correctly but more about capturing all cases that have “cancer” with the answer as “cancer”. So if we simply always say every case as “cancer”, we have 100% recall.
+
++++
+@title[F-measure]
+
++++
+@title[AUC]
+
++++
+@title[NLL]
+
+---
+@title[Performance Metrics. Regression]
+
+## Performance Metrics. Regression
 
 
